@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-^eysmfc#7h1ckd@%g7f@9qm0avadu#6(1@bdy8c&&vak5=n&17'  # noqal
+SECRET_KEY = 'django-insecure-^eysmfc#7h1ckd@%g7f@9qm0avadu#6(1@bdy8c&&vak5=n&17'  # noqa
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
-    
 ]
 
 MIDDLEWARE = [
@@ -91,16 +90,16 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator', # noqal
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',   # noqal
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',   # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',   # noqal
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',   # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',   # noqal
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',   # noqa
     },
 ]
 
