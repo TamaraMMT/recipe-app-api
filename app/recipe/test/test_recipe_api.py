@@ -409,7 +409,7 @@ class ImageUploadTests(TestCase):
             payload = {'image': image_file}
             response = self.client.post(url, payload, format='multipart')
 
-        self.recipe.refresponseh_from_db()
+        self.recipe.refresh_from_db()
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertIn('image', response.data)
         self.assertTrue(os.path.exists(self.recipe.image.path))
