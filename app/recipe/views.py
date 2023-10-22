@@ -107,6 +107,7 @@ class BaseRecipeAttrViewSet(mixins.DestroyModelMixin,
         """Filter queryset to authenticated user."""
         return self.queryset.filter(user=self.request.user).order_by('-name')
 
+
 class TagViewSet(BaseRecipeAttrViewSet):
     """Manage tags in the database."""
     serializer_class = serializers.TagSerializer
